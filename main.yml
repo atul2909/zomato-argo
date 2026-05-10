@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: cont1
-        image: richardchesterwood/k8s-fleetman-webapp-angular:release2-no-websockets-19
+        image: richardchesterwood/k8s-fleetman-webapp-angular:release2-multi
         ports:
           - containerPort: 3000
 ---
