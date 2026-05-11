@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: conta11
-        image: sharmaatulkumar29/zomatoimage:8e03d1c5bdbb4be749ae611009ecb542cbdb8a16
+        image: sharmaatulkumar29/zomatoimage:8c14f200d8b1df4741b803f960a0a6a4faed2f2e
         ports:
           - containerPort: 3000
