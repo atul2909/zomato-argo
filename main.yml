@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: zomato
-  name: zomato-deploy
+  name: zomato-deployx
 spec:
   replicas: 3
   selector:
@@ -15,17 +15,17 @@ spec:
         app: zomato
     spec:
       containers:
-      - name: cont1
-        image: nginx:1.27
+      - name: conta11
+        image: sharmaatulkumar29/zomatoimage:32a1a94b7fd667c50b5869048e62e05c189a777e
         ports:
           - containerPort: 3000
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: zomato-service
+  name: zomato-servicex
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: zomato
   ports:
